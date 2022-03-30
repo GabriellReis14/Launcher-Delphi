@@ -1,0 +1,104 @@
+object frmOpcoes: TfrmOpcoes
+  Left = 0
+  Top = 0
+  Caption = 'Settings'
+  ClientHeight = 519
+  ClientWidth = 472
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'Tahoma'
+  Font.Style = []
+  OldCreateOrder = False
+  PixelsPerInch = 96
+  TextHeight = 13
+  object pnSettings: TPanel
+    Left = 0
+    Top = 0
+    Width = 472
+    Height = 519
+    Align = alClient
+    BevelOuter = bvNone
+    Color = clDefault
+    ParentBackground = False
+    TabOrder = 0
+    ExplicitLeft = 232
+    ExplicitTop = 112
+    ExplicitWidth = 185
+    ExplicitHeight = 41
+    object lblAccountID: TLabel
+      Left = 42
+      Top = 57
+      Width = 96
+      Height = 24
+      Caption = 'Account ID:'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWindow
+      Font.Height = -19
+      Font.Name = 'Product Sans'
+      Font.Style = []
+      ParentFont = False
+    end
+    object Label1: TLabel
+      Left = 42
+      Top = 119
+      Width = 91
+      Height = 24
+      Caption = 'Resolution:'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWindow
+      Font.Height = -19
+      Font.Name = 'Product Sans'
+      Font.Style = []
+      ParentFont = False
+    end
+    object edtAccountID: TEdit
+      Left = 144
+      Top = 56
+      Width = 185
+      Height = 25
+      TabOrder = 0
+    end
+    object rgResolution: TRadioGroup
+      Left = 42
+      Top = 149
+      Width = 391
+      Height = 89
+      Color = clWhite
+      Columns = 3
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWindow
+      Font.Height = -16
+      Font.Name = 'Tahoma'
+      Font.Style = []
+      Items.Strings = (
+        '640x480'
+        '800x600'
+        '1024x768'
+        '1280x1024'
+        '1366x768'
+        '1440x900')
+      ParentBackground = False
+      ParentColor = False
+      ParentFont = False
+      TabOrder = 1
+    end
+    object CheckBox1: TCheckBox
+      Left = 176
+      Top = 253
+      Width = 97
+      Height = 17
+      Caption = 'Window Mode'
+      Color = clWindow
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWindow
+      Font.Height = -11
+      Font.Name = 'Product Sans'
+      Font.Style = []
+      ParentColor = False
+      ParentFont = False
+      TabOrder = 2
+    end
+  end
+end

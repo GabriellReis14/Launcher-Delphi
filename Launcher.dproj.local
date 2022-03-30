@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2021/07/04 13:30:14.000.512,=C:\Users\Gabriell\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2021/07/04 13:30:46.000.090,C:\Projetos\Launcher\U_Launcher.dfm=C:\Users\Gabriell\Documents\Embarcadero\Studio\Projects\Unit1.dfm</Transaction>
+    <Transaction>2021/07/04 13:30:46.000.090,C:\Projetos\Launcher\U_Launcher.pas=C:\Users\Gabriell\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2021/07/04 13:30:50.000.074,C:\Projetos\Launcher\Launcher.dproj=C:\Users\Gabriell\Documents\Embarcadero\Studio\Projects\Project1.dproj</Transaction>
+    <Transaction>2021/07/04 16:46:17.000.422,=C:\Projetos\Launcher\Unit1.pas</Transaction>
+    <Transaction>2021/07/04 16:47:05.000.945,C:\Projetos\Launcher\Settings\U_Settings.pas=C:\Projetos\Launcher\Unit1.pas</Transaction>
+    <Transaction>2021/07/04 16:47:05.000.945,C:\Projetos\Launcher\Settings\U_Settings.dfm=C:\Projetos\Launcher\Unit1.dfm</Transaction>
+    <Transaction>2021/07/05 08:16:08.000.791,=C:\Projetos\Launcher\Unit1.pas</Transaction>
+    <Transaction>2021/07/05 08:20:45.000.714,C:\Projetos\Launcher\Functions\U_Functions.pas=C:\Projetos\Launcher\Unit1.pas</Transaction>
+  </Transactions>
+</BorlandProject>

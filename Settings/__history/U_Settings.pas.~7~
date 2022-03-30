@@ -1,0 +1,62 @@
+unit U_Settings;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.StdCtrls, Vcl.ExtCtrls, Vcl.Buttons, Registry;
+
+type
+  TfrmOpcoes = class(TForm)
+    pnSettings: TPanel;
+    edtAccountID: TEdit;
+    lblAccountID: TLabel;
+    rgResolution: TRadioGroup;
+    lblResolution: TLabel;
+    chkWindowMode: TCheckBox;
+    CheckBox1: TCheckBox;
+    CheckBox2: TCheckBox;
+    pnCancel: TPanel;
+    shpCancel: TShape;
+    pnConfirm: TPanel;
+    shpBtnOk: TShape;
+    btnOk: TSpeedButton;
+    btnCancel: TSpeedButton;
+    procedure FormCreate(Sender: TObject);
+    procedure btnCancelClick(Sender: TObject);
+    procedure FormClose(Sender: TObject; var Action: TCloseAction);
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  frmOpcoes: TfrmOpcoes;
+
+implementation
+
+{$R *.dfm}
+
+procedure TfrmOpcoes.btnCancelClick(Sender: TObject);
+begin
+  Close;
+end;
+
+procedure TfrmOpcoes.FormClose(Sender: TObject; var Action: TCloseAction);
+begin
+  Action:= caFree;
+end;
+
+procedure TfrmOpcoes.FormCreate(Sender: TObject);
+var
+  HD: THandle;
+begin
+  HD := CreateRoundRectRgn(0,0,Width,Height,40,40);
+  SetWindowRgn(Handle,Hd,True);
+  AlphaBlendValue:= 245;
+  AlphaBlend:= True;
+  KeyPreview:= True;
+end;
+
+end.

@@ -1,0 +1,40 @@
+unit U_Functions;
+
+interface
+uses
+  Windows, SysUtils, VCL.Forms;
+type
+  TFunctions = class
+  private
+   //
+  public
+
+  protected
+    procedure startgame;
+  end;
+
+implementation
+
+
+{ TFunctions }
+
+procedure TFunctions.startgame;
+begin
+ try
+  if FileExists(GetCurrentDir + '\Freaks.exe') then
+    begin
+      WinExec('Freaks.exe connect /u198.27.111.96 /p12005', SW_NORMAL);
+      Close;
+    end
+  else
+   begin
+    Application.MessageBox('Não existe o arquivo Freaks.exe! Favor reinstalar o jogo e tentar novamente!','Atenção!', MB_ICONWARNING + MB_OK);
+    Close;
+   end;
+ except
+   on E: Exception do
+    raise Exception.Create('Não foi possível abrir o jogo! Contate o Administrador.'^m + 'Error Message');
+ end;
+end;
+
+end.
